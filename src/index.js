@@ -10,6 +10,6 @@ const root = ReactDOM.createRoot(rootElement);
 let alert = () => { alert("Hello") }
 root.render(
   <>
-    <TaskCard />
+    <TaskCard ready={true} />
   </>
 );
