@@ -1,4 +1,5 @@
 import React from "react";
+import { VscBug } from "react-icons/vsc";
 
 const handlerOnClick = () => {
   fetch("https://jsonplaceholder.typicode.com/posts")
@@ -8,7 +9,12 @@ const handlerOnClick = () => {
 };
 
 const Post = () => {
-  return <button onClick={handlerOnClick}>Recuperar datos</button>;
+  return (
+    <button onClick={handlerOnClick}>
+      {" "}
+      <VscBug /> Recuperar datos
+    </button>
+  );
 };
 
 export default Post;
