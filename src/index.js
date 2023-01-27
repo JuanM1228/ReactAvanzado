@@ -14,12 +14,21 @@ const users = [{
   id: 2,
   name: 'Joe Wan',
   image: 'https://robohash.org/user 2'
+},
+{
+  id: 3,
+  name: 'Joe Wan',
+  image: 'https://robohash.org/user 3'
 }]
 
 root.render(
   <>
     {users.map((user, index) => {
-      return <h1 key={index}>{user.name}</h1>
+      return (
+        <div key={index}>
+          <h1>{user.name}</h1>
+          <img src={user.image} />
+        </div>)
     })}
   </>
 );
