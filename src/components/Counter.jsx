@@ -1,29 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Counter = () => {
-  const [counter, setCounter] = useState(0);
+  const [clockState, setClockState] = useState("");
 
-  const onClickAdd = () => {
-    setCounter(counter + 1);
-  };
-
-  const onClickSubstract = () => {
-    setCounter(counter - 1);
-  };
-
-  const onClickReset = () => {
-    setCounter(0);
-  };
-
+  useEffect(() => {
+    setInterval(() => {
+      const date = new Date();
+      setClockState(date.toLocaleTimeString());
+    }, 1000);
+  });
   return (
     <>
-      <h1 className="subTitle">UseState</h1>
+      <h1 className="subTitle">useState & useEffect</h1>
       <div id="counter">
-        <p>{counter}</p>
+        <p>{clockState}</p>
         <div id="buttonsCounter">
-          <button onClick={onClickAdd}>Add</button>
-          <button onClick={onClickSubstract}>Substract</button>
-          <button onClick={onClickReset}>Reset</button>
+          <button>Add</button>
+          <button>Substract</button>
+          <button>Reset</button>
         </div>
       </div>
     </>

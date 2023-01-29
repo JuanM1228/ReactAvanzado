@@ -2,27 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 #counter{
-  border: solid;
-  border-color: antiquewhite;
   display: flex;
   flex-wrap: wrap;
+  border: solid 3px rgb(77, 126, 126);
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
   padding: 20px
 }
 
-
-
 #counter > p {
-  font-size: 9rem;
+  font-size: 3rem;
   height: auto;
-  border: solid;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgb(106, 136, 163);
-  color: rgb(106, 136, 163);
+  color: rgb(77, 126, 126);
   text-align: center;
   padding: 0 20px;
-  margin: 50px;
+  margin: 10px 30px;
   font-family: sans-serif;
 }
 
@@ -31,13 +26,23 @@
   flex-direction: column;
 }
 
-#buttonsCounter > button {
-  height: 50px;
-  width: 200px;
+#buttonsCounter >  button {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: rgb(77, 126, 126);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(77, 126, 126);
+  background: transparent;
+  box-shadow: 3px 3px rgb(77, 126, 126);
+  cursor: pointer;
   margin: 10px 0;
-  background-color: rgb(167, 172, 181);
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-
 }
+
+
+#buttonsCounter > button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+        

@@ -6,11 +6,30 @@
 }
 
 .title {
+  display: flex;
   color: rgb(106, 136, 163);
-  font-family: 'League Spartan', sans-serif;
-  font-size: 80px;
   margin: 30px 0;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
+.title > h1{
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 60px;
+}
+
+.subTitle{
+  color: rgb(77, 126, 126);
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin: 0 0 15px 0;
+}
+
+.icons {
+ font-size: 90px;
+}
