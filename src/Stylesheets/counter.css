@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+#counter{
+  border: solid;
+  border-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+}
+
+
+
+#counter > p {
+  font-size: 9rem;
+  height: auto;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(106, 136, 163);
+  color: rgb(106, 136, 163);
+  text-align: center;
+  padding: 0 20px;
+  margin: 50px;
+  font-family: sans-serif;
+}
+
+#buttonsCounter{
+  display: flex;
+  flex-direction: column;
+}
+
+#buttonsCounter > button {
+  height: 50px;
+  width: 200px;
+  margin: 10px 0;
+  background-color: rgb(167, 172, 181);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+}
