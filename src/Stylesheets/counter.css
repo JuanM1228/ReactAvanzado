@@ -21,12 +21,13 @@
   font-family: sans-serif;
 }
 
-#buttonsCounter{
+#buttonsCounter, #radioButtons{
   display: flex;
   flex-direction: column;
+
 }
 
-#buttonsCounter >  button {
+#buttonsCounter >  button, #radioButtons > span{
   font-family: sans-serif;
   font-size: 1.2rem;
   color: rgb(77, 126, 126);
@@ -37,7 +38,7 @@
   background: transparent;
   box-shadow: 3px 3px rgb(77, 126, 126);
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 
