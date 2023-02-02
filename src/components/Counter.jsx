@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const Counter = () => {
-  let now = new Date();
+  const now = new Date();
   let actualHour = now.getHours();
-  let [clockState, setClockState] = useState("---");
+  let [clockState, setClockState] = useState(now.toLocaleTimeString());
   let [checkState, setCheckState] = useState(1);
   let [seconds, setSeconds] = useState("");
   let [minutes, setMinutes] = useState("");
@@ -16,7 +16,9 @@ const Counter = () => {
   useEffect(() => {
     setInterval(() => {
       const date = new Date();
-      setClockState(date.toLocaleTimeString());
+      let now = date.toLocaleTimeString();
+
+      setClockState(now);
     }, 1000);
   });
   return (
